@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%; /* Ensures the container uses the full height */
+  height: 100%;
 }
 
 h1 {
@@ -29,7 +29,7 @@ h1 {
   display: flex;
   gap: 10px;
   justify-content: center;
-  flex-wrap: nowrap; /* Default to no wrapping on larger screens */
+  flex-wrap: nowrap;
 }
 
 .dice {
@@ -48,13 +48,13 @@ h1 {
 }
 
 .dice.rolling {
-  background-color: #f4f4f4; /* Subtle change to indicate rolling */
+  background-color: #f4f4f4;
   animation: bounce 1.5s infinite;
 }
 
 .spin {
   font-size: 30px;
-  animation: spin 0.5s infinite linear; /* Spinning dice face */
+  animation: spin 0.5s infinite linear;
 }
 
 @keyframes spin {
@@ -100,8 +100,8 @@ button:disabled {
 /* Responsive Design */
 @media (max-width: 768px) {
   .dice-container {
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    max-width: 250px; /* Centers dice neatly */
+    flex-wrap: wrap;
+    max-width: 250px;
   }
 
   .dice {
@@ -118,7 +118,7 @@ button:disabled {
 
 @media (max-width: 480px) {
   .dice-container {
-    max-width: 230px; /* Fits 4 dice comfortably */
+    max-width: 230px;
     justify-content: center;
   }
 
